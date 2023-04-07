@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="school.css">
+    <style>
+                form{
+                  text-align: center;
+                
+                }
+                /* fieldset{
+                  margin-top: 100px;
+                  margin: 100px;
+                  margin-left: 300px;
+                  margin-right: 300px;
+                } */
+                .Gender{
+                  /* background-color: aqua; */
+                  /* margin-left: 300px;
+                  margin-right: 300px; */
+                  /* width: 30%; */
+                  margin-left: 120px;
+                  margin-right: 120px;
+        /* width: 50px;
+        height: 50px; */
+        /* padding: 2%; */
+        text-align: center;
+
+                }
+                /* fieldset{
+                  margin-left: 300px;
+                  margin-right: 300px;
+                      } */
+       .first{
+        margin-left: 250px;
+        margin-right: 250px;
+       text-align: center;
+       padding: 1%;
+       }
+       legend{
+        text-align:justify;
+       }
+               
+    </style>
+</head>
+<body>
+   
+  <fieldset class="first">
+
+
+  
+     <form action="apna_college.html">
+          <h1>Payment form</h1>
+          <h2>Contact Information</h2>
+            <div>Name: *<input type="text" name="akash" id="" requried></div>
+            <br>
+            <fieldset class="Gender">
+                <legend>Gender</legend>
+          <div >
+              Male<input type="radio" name="gender" id="male">
+              Female<input type="radio" name="gender" id="female">
+              Other<input type="radio" name="gender" id="other"
+          </div>
+        </fieldset>
+        <!-- <fieldset>
+          <legend>Gender</legend>
+          Male<input type="radio" name="Gender" id="male" required>
+          Female<input type="radio" name="Gender" id="Female" required>
+          Other<input type="radio" name="Gender" id="Other" required>
+       </fieldset> -->
+        <p>Address: </p><textarea name="address" id="address" cols="40" rows="10"></textarea>
+          <p>Email:<input type="email" name="email" id="email"></p>
+          <p>Pincode:<input type="number" name="pincode" id="pincode"></p>
+          <h2>Payment Information</h2>
+          <p>
+            Card type:
+            <select name="card_type" id="card_type">
+                    <option value="">--Select a card type--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Cradit Card">Cradit card</option>
+                    <option value="ATM">ATM</option>
+          </select>
+          </p>
+          <p>
+            Card Number <input type="number" name="card_number" id="card_number">
+          </p>
+          <p>
+            Expiration Date:<input type="date" name="exp_date" id="exp_date">
+          </p>
+          <p>
+            CVV <input type="password" name="cvv" id="cvv">
+          </p>
+          <input type="submit" value="Pay now">
+          <input type="reset" value="Reset">
+        </form>
+
+      </fieldset>
+        
+    </html>
